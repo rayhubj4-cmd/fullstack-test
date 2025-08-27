@@ -1,0 +1,31 @@
+{
+  "typescript": true,
+  "tsconfig": "tsconfig.json",
+  "directories": {
+    "config": "config",
+    "public": "public",
+    "providers": "providers",
+    "database": "database",
+    "resources": "resources",
+    "start": "start"
+  },
+  "aliases": {
+    "App": "./app"
+  },
+  "preloads": [
+    "./start/kernel",
+    "./start/routes"
+  ],
+  "providers": [
+    "@adonisjs/core"
+  ],
+  "aceProviders": [
+    "@adonisjs/core"
+  ],
+  "metaFiles": [
+    {
+      "pattern": "data/**",
+      "reloadServer": false
+    }
+  ]
+}

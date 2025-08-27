@@ -1,0 +1,1 @@
+export default { csrf: { enabled: false } }
